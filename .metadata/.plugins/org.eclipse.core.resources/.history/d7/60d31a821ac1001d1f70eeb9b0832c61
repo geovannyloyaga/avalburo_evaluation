@@ -1,0 +1,12 @@
+package com.avalburo.backend.apirest.dto;
+
+public class RequestMessageDto {
+	
+	private int id;
+	
+	private String message;
+	
+	private int point;
+	
+	private int userId;
+}

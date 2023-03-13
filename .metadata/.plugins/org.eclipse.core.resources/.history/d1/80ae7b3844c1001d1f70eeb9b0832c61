@@ -1,0 +1,89 @@
+[ {
+  "id" : 1,
+  "comment" : "Hola",
+  "points" : 0,
+  "user" : null,
+  "responses" : [ {
+    "id" : 100,
+    "comment" : "Respuesta Hola",
+    "points" : 0,
+    "user" : {
+      "id" : 5,
+      "fullName" : "Geovanny",
+      "photoUrl" : "",
+      "createdAt" : 1678672570237
+    },
+    "responses" : [ {
+      "id" : 1000,
+      "comment" : "Respuesta 2 Hola",
+      "points" : 0,
+      "user" : {
+        "id" : 5,
+        "fullName" : "Geovanny",
+        "photoUrl" : "",
+        "createdAt" : 1678672570237
+      },
+      "responses" : null,
+      "parent" : 100,
+      "responseId" : 100,
+      "createdAt" : null
+    }, {
+      "id" : 1001,
+      "comment" : "Respuesta 33333 Hola",
+      "points" : 0,
+      "user" : {
+        "id" : 5,
+        "fullName" : "Geovanny",
+        "photoUrl" : "",
+        "createdAt" : 1678672570237
+      },
+      "responses" : null,
+      "parent" : 100,
+      "responseId" : 100,
+      "createdAt" : 1678673359625
+    }, {
+      "id" : 1002,
+      "comment" : "fsgsfgsdfg",
+      "points" : 0,
+      "user" : {
+        "id" : 5,
+        "fullName" : "Geovanny",
+        "photoUrl" : "",
+        "createdAt" : 1678672570237
+      },
+      "responses" : null,
+      "parent" : 100,
+      "responseId" : 100,
+      "createdAt" : 1678673382187
+    } ],
+    "parent" : 1,
+    "responseId" : 0,
+    "createdAt" : null
+  }, {
+    "id" : 101,
+    "comment" : "asdasfasfgsdfg",
+    "points" : 0,
+    "user" : {
+      "id" : 5,
+      "fullName" : "Geovanny",
+      "photoUrl" : "",
+      "createdAt" : 1678672570237
+    },
+    "responses" : null,
+    "parent" : 1,
+    "responseId" : 0,
+    "createdAt" : null
+  } ],
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678671830137
+}, {
+  "id" : 2,
+  "comment" : "Mensaje 2",
+  "points" : 0,
+  "user" : null,
+  "responses" : null,
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678671838120
+} ]

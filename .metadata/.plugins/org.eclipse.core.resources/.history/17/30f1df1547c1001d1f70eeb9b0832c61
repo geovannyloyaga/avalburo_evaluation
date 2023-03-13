@@ -1,0 +1,17 @@
+package com.avalburo.backend.apirest.interfaces;
+
+import java.util.List;
+
+import com.avalburo.backend.apirest.dto.RequestMessageDto;
+import com.avalburo.backend.apirest.entities.Message;
+
+public interface IMessageService {
+
+	public List<Message> findAll();
+	
+	public Message findById(int messageId);
+	
+	public Message save(RequestMessageDto requestMessageDto);
+	
+	public Message saveResponse(int messageId, RequestMessageDto requestResponseDto);
+}

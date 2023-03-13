@@ -1,0 +1,10 @@
+package com.avalburo.backend.apirest.dto;
+
+import java.util.List;
+
+public class ResponseListDto<T> extends ResponseDto<T> {
+	private List<T> responseList;
+	
+	private int totalRows;
+
+}

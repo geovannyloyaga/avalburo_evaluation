@@ -1,0 +1,12 @@
+package com.avalburo.backend.apirest.entities;
+
+import java.sql.Timestamp;
+
+public class Response {
+
+	private Long id;
+	private String comment;
+	private Long points;
+	private User user;
+	private Timestamp createdAt;
+}

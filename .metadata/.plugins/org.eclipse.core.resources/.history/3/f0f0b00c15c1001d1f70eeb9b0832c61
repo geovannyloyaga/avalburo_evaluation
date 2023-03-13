@@ -1,0 +1,11 @@
+package com.avalburo.backend.apirest.dto;
+
+public class ResponseDto<T> {
+
+	private int code;
+	
+	private String error;
+	
+	private T responseObject;
+	
+}

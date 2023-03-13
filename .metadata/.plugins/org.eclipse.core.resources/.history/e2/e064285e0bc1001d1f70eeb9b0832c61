@@ -1,0 +1,39 @@
+package com.avalburo.backend.apirest.dao;
+
+import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@Component
+public class UserDao {
+
+	private static final String FILE_PATH = "forum.json";
+    private ObjectMapper objectMapper = new ObjectMapper();
+
+    public List<User> findAll() {
+        try {
+            List<Product> products = objectMapper.readValue(new File(FILE_PATH), new TypeReference<List<Product>>() {});
+            return products;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+    }
+
+    public void save(Product product) {
+        List<Product> products = findAll();
+        Long nextId = getNextId(products);
+        product.setId(nextId);
+        products.add(product);
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(FILE_PATH), products);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private Long getNextId(List<Product> products) {
+        Long maxId = products.stream().mapToLong(Product::getId).max().orElse(0L);
+        return maxId + 1;
+    }
+}

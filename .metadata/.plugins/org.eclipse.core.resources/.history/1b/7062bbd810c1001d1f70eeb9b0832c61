@@ -1,0 +1,5 @@
+package com.avalburo.backend.apirest.interfaces;
+
+public interface IUserService extends UserDao {
+
+}

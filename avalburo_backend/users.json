@@ -1,0 +1,11 @@
+[ {
+  "id" : 1,
+  "fullName" : "Geovanny",
+  "photoUrl" : "",
+  "createdAt" : 1678673452331
+}, {
+  "id" : 2,
+  "fullName" : "Geovanny",
+  "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+  "createdAt" : 1678674500505
+} ]

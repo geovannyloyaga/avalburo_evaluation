@@ -1,0 +1,37 @@
+package com.avalburo.backend.apirest.business.logic;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.avalburo.backend.apirest.dao.MessageDao;
+import com.avalburo.backend.apirest.entities.Message;
+import com.avalburo.backend.apirest.entities.User;
+import com.avalburo.backend.apirest.interfaces.IMessageService;
+
+@Service
+public class MessageService implements IMessageService {
+
+	@Autowired
+	private MessageDao messageDao;
+
+	@Override
+	@Transactional(readOnly = true)
+	public List<Message> findAll() {
+		return (List<Message>)messageDao.findAll();
+	}
+	
+	@Override
+	@Transactional(readOnly = true)
+	public Message findById(int messageId) {
+		return (Message)userDao.findById(messageId);
+	}
+
+	@Override
+	public Message save(Message message) {
+		return (Message)messageDao.save(message);
+	}
+
+}

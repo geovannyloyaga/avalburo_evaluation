@@ -1,0 +1,113 @@
+[ {
+  "id" : 3,
+  "comment" : "Respuesta 3",
+  "points" : 0,
+  "user" : {
+    "id" : 2,
+    "fullName" : "Geovanny",
+    "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+    "createdAt" : 1678674500505
+  },
+  "responses" : [ {
+    "id" : 300,
+    "comment" : "sdfgsdfgsdfg",
+    "points" : 0,
+    "user" : {
+      "id" : 2,
+      "fullName" : "Geovanny",
+      "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+      "createdAt" : 1678674500505
+    },
+    "responses" : [ {
+      "id" : 300000,
+      "comment" : "dfgsdfgsdfg",
+      "points" : 0,
+      "user" : {
+        "id" : 2,
+        "fullName" : "Geovanny",
+        "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+        "createdAt" : 1678674500505
+      },
+      "responses" : null,
+      "parent" : 300,
+      "responseId" : 300,
+      "createdAt" : 1678674908057
+    } ],
+    "parent" : 3,
+    "responseId" : 0,
+    "createdAt" : 1678674896837
+  } ],
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678674888007
+}, {
+  "id" : 2,
+  "comment" : "Mensaje 2",
+  "points" : 0,
+  "user" : {
+    "id" : 2,
+    "fullName" : "Geovanny",
+    "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+    "createdAt" : 1678674500505
+  },
+  "responses" : [ {
+    "id" : 200,
+    "comment" : "ladnalsnfadf",
+    "points" : 0,
+    "user" : {
+      "id" : 2,
+      "fullName" : "Geovanny",
+      "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+      "createdAt" : 1678674500505
+    },
+    "responses" : [ {
+      "id" : 200000,
+      "comment" : "sdfgsdfgsdfg",
+      "points" : 0,
+      "user" : {
+        "id" : 2,
+        "fullName" : "Geovanny",
+        "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+        "createdAt" : 1678674500505
+      },
+      "responses" : null,
+      "parent" : 200,
+      "responseId" : 200,
+      "createdAt" : 1678674912718
+    } ],
+    "parent" : 2,
+    "responseId" : 0,
+    "createdAt" : 1678674894048
+  } ],
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678674880547
+}, {
+  "id" : 1,
+  "comment" : "Mensaje 1",
+  "points" : 0,
+  "user" : {
+    "id" : 2,
+    "fullName" : "Geovanny",
+    "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+    "createdAt" : 1678674500505
+  },
+  "responses" : [ {
+    "id" : 100,
+    "comment" : "Respuesta 2",
+    "points" : 0,
+    "user" : {
+      "id" : 2,
+      "fullName" : "Geovanny",
+      "photoUrl" : "https://static.platzi.com/media/avatares/default.png",
+      "createdAt" : 1678674500505
+    },
+    "responses" : null,
+    "parent" : 1,
+    "responseId" : 0,
+    "createdAt" : 1678674877043
+  } ],
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678674871099
+} ]

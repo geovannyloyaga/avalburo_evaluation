@@ -1,0 +1,13 @@
+package com.avalburo.backend.apirest.entities;
+
+import java.sql.Timestamp;
+
+public class User {
+
+	private Long id;	
+	private String fullName;
+	private String photoUrl;
+	private Timestamp createdAt;
+	
+	
+}

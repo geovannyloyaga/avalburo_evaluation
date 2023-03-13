@@ -1,0 +1,22 @@
+[ {
+  "id" : 1,
+  "comment" : "Mensaje 1",
+  "points" : 0,
+  "user" : {
+    "id" : 1,
+    "fullName" : "Geovanny Loyaga",
+    "photoUrl" : "",
+    "createdAt" : 1678657813268
+  },
+  "responses" : [ {
+    "id" : 1,
+    "comment" : "Respuesta de message",
+    "points" : 0,
+    "user" : null,
+    "responses" : null,
+    "parent" : 1,
+    "createdAt" : null
+  } ],
+  "parent" : null,
+  "createdAt" : 1678660303652
+} ]

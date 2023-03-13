@@ -1,0 +1,13 @@
+package com.avalburo.backend.apirest.business.logic;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.avalburo.backend.apirest.dao.UserDao;
+
+@Service
+public class BLUser {
+
+	@Autowired
+	private UserDao userDAO;
+}

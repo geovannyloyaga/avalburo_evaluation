@@ -1,0 +1,22 @@
+1678647873917	Delete element
+1678648937820	Rename local variable 'products'
+1678648982729	Rename local variable 'messages'
+1678650591400	Delete element
+1678650696472	Delete element
+1678651257193	Delete element
+1678651357361	Rename type 'IUserDao'
+1678653953437	Rename local variable 'usersFound'
+1678654192961	Rename local variable 'registry'
+1678655029231	Rename field 'users'
+1678655041018	Rename local variable 'users'
+1678655066627	Rename local variable 'user'
+1678655077892	Rename local variable 'optionalUser'
+1678655085649	Rename local variable 'user'
+1678655095768	Rename local variable 'users'
+1678655338446	Rename field 'userService'
+1678655371066	Rename local variable 'userCreate'
+1678655553215	Rename field 'message'
+1678655851705	Rename local variable 'usersCreated'
+1678656455857	Rename local variable 'userId'
+1678660057427	Rename local variable 'nextId'
+1678661836172	Delete element

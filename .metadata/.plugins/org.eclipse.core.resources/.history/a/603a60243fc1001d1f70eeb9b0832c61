@@ -1,0 +1,57 @@
+[ {
+  "id" : 1,
+  "comment" : "Mensaje 1",
+  "points" : 0,
+  "user" : {
+    "id" : 1,
+    "fullName" : "Geovanny Loyaga",
+    "photoUrl" : "",
+    "createdAt" : 1678657813268
+  },
+  "responses" : [ {
+    "id" : 100,
+    "comment" : "Respuesta de mensaje",
+    "points" : 0,
+    "user" : {
+      "id" : 1,
+      "fullName" : "Geovanny Loyaga",
+      "photoUrl" : "",
+      "createdAt" : 1678657813268
+    },
+    "responses" : [ {
+      "id" : 1000,
+      "comment" : "Respuesta de respuesta de mensaje",
+      "points" : 0,
+      "user" : {
+        "id" : 1,
+        "fullName" : "Geovanny Loyaga",
+        "photoUrl" : "",
+        "createdAt" : 1678657813268
+      },
+      "responses" : null,
+      "parent" : 100,
+      "responseId" : 100,
+      "createdAt" : null
+    } ],
+    "parent" : 1,
+    "responseId" : 0,
+    "createdAt" : null
+  } ],
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678662076606
+}, {
+  "id" : 2,
+  "comment" : "Mensaje 2",
+  "points" : 0,
+  "user" : {
+    "id" : 1,
+    "fullName" : "Geovanny Loyaga",
+    "photoUrl" : "",
+    "createdAt" : 1678657813268
+  },
+  "responses" : null,
+  "parent" : null,
+  "responseId" : 0,
+  "createdAt" : 1678667573971
+} ]

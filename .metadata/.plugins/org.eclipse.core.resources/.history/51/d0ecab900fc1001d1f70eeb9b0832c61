@@ -1,0 +1,5 @@
+package com.avalburo.backend.apirest.dao;
+
+public class UserDao {
+
+}

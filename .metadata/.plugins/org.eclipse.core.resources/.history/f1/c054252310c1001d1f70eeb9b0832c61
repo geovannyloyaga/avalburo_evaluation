@@ -1,0 +1,5 @@
+package com.avalburo.backend.apirest.controllers;
+
+public class UserRestController {
+
+}

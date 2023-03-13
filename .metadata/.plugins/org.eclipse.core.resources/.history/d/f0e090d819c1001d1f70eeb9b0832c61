@@ -1,0 +1,26 @@
+package com.avalburo.backend.apirest.business.logic;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.avalburo.backend.apirest.dao.UserDao;
+import com.avalburo.backend.apirest.entities.Message;
+import com.avalburo.backend.apirest.interfaces.IMessageService;
+
+public class MessageService implements IMessageService {
+
+	@Autowired
+	private UserDao userDao;
+
+	@Override
+	public List<Message> findAll() {
+		return null;
+	}
+
+	@Override
+	public Message save(Message message) {
+		return null;
+	}
+
+}

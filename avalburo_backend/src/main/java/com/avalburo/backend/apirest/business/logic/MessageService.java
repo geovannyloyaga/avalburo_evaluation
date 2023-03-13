@@ -18,8 +18,17 @@ public class MessageService implements IMessageService {
 	@Autowired
 	private MessageDao messageDao;
 	
+	
+	public void setMessageDao(MessageDao messageDao) {
+		this.messageDao = messageDao;
+	}
+	
 	@Autowired
 	private UserDao userDao;
+
+	public void setUserDao(UserDao userDao) {
+		this.userDao = userDao;
+	}
 
 	@Override
 	@Transactional(readOnly = true)

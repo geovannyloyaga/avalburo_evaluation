@@ -25,10 +25,14 @@ public class MessageRestController {
 	@Autowired
 	private IMessageService messageService;
 	
+	public void setMessageService(IMessageService messageService) {
+		this.messageService = messageService;
+	}
+
 	@GetMapping("/{userId}/findAll")
 	public ResponseListDto<Message> findAll(@PathVariable int userId){
 		try {
-			List<Message> usersFound = messageService.findAll(userId);
+			List<Message> usersFound = this.messageService.findAll(userId);
 			return new ResponseListDto<Message>(200, null, usersFound, usersFound.size());
 		} catch (Exception e) {
 			return new ResponseListDto<Message>(409, "Error para obtener lista de usuarios".concat(messageFile), null, 0);
@@ -48,7 +52,7 @@ public class MessageRestController {
 	@PostMapping("/{messageId}/saveResponse")
 	public ResponseDto<Message> saveResponse(@PathVariable int messageId, @RequestBody RequestMessageDto requestMessage){
 		try {
-			Message messagesCreated = messageService.saveResponse(messageId, requestMessage);
+			Message messagesCreated = this.messageService.saveResponse(messageId, requestMessage);
 			return new ResponseDto<Message>(200, null, messagesCreated);
 		} catch (Exception e) {
 			return new ResponseDto<Message>(409, "Error para obtener lista de mensajes del foro".concat(messageFile), null);

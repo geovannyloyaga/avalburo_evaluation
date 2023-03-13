@@ -24,10 +24,14 @@ public class UserRestController {
 	@Autowired
 	private IUserService userService;
 	
+	public void setUserService(IUserService userService) {
+		this.userService = userService;
+	}
+
 	@GetMapping("/findAll")
 	public ResponseListDto<User> findAll(){
 		try {
-			List<User> usersFound = userService.findAll();
+			List<User> usersFound = this.userService.findAll();
 			return new ResponseListDto<User>(200, null, usersFound, usersFound.size());
 		} catch (Exception e) {
 			return new ResponseListDto<User>(409, "Error para obtener lista de usuarios".concat(messageFile), null, 0);
@@ -37,7 +41,7 @@ public class UserRestController {
 	@PostMapping("/save")
 	public ResponseDto<User> save(@RequestBody RequestUserDto requestUser){
 		try {
-			User usersCreated = userService.save(requestUser);
+			User usersCreated = this.userService.save(requestUser);
 			return new ResponseDto<User>(200, null, usersCreated);
 		} catch (Exception e) {
 			return new ResponseDto<User>(409, "Error para obtener lista de usuarios".concat(messageFile), null);
